@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "CheckOut";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Thanh toán</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Sách</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!--Section: Design Block-->
+<section>
+
+    <div class="row">
+        <div class="col-md-4 mb-4 position-static">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h5 class="mb-0 text-font">
+                        1 sản phẩm<span class="float-end mt-1"
+                                        style="font-size: 13px ;">Chỉnh sửa</span>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="~/Content/images/product-1.jpg"
+                                 class="rounded-3" style="width: 100px;" alt="Blue Jeans Jacket" />
+                        </div>
+                        <div class="col-md-6 ms-3">
+                            <span class="mb-0 text-price">$35.00</span>
+                            <p class="mb-0 text-descriptions fw-bold">Đắc Nhân Tâm</p>
+                            <p class="text-descriptions mt-0">
+                                Số lượng:<span class="text-descriptions fw-bold">1</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer mt-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 text-muted">
+                                Tổng tiền
+                                <span>$35.00</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 text-muted">
+                                Phí ship
+                                <span>$0.00</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0 fw-bold text-uppercase">
+                                thanh toán
+                                <span>$35.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8 mb-4">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h5 class="mb-0 text-font text-uppercase">Thông tin giao hàng</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+
+                        <!-- Text input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="form11Example3" class="form-control" />
+                            <label class="form-label" for="form11Example3">Họ tên</label>
+                        </div>
+
+                        <!-- Text input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="form11Example4" class="form-control" />
+                            <label class="form-label" for="form11Example4">Địa chỉ</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="email" id="form11Example5" class="form-control" />
+                            <label class="form-label" for="form11Example5">Email</label>
+                        </div>
+
+                        <!-- Number input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="number" id="form11Example6" class="form-control" />
+                            <label class="form-label" for="form11Example6">SĐT</label>
+                        </div>
+
+                        <!-- Message input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <textarea class="form-control" id="form11Example7" rows="4"></textarea>
+                            <label class="form-label" for="form11Example7">Lời nhắn</label>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="text-center">
+                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn button-order col-md-10">Đặt hàng</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--Section: Design Block-->

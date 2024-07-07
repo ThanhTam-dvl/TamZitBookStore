@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Giỏ hàng của bạn</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Sách</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<section class="h-100 h-custom">
+    <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="h5">Giỏ hàng của bạn</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class="d-flex align-items-center">
+                                        <img src="~/Content/images/product-1.jpg" class="img-fluid rounded-3"
+                                             style="width: 120px;" alt="Book">
+                                        <div class="flex-column ms-4">
+                                            <p class="mb-2">Thinking, Fast and Slow</p>
+                                            <p class="mb-0">Daniel Kahneman</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="align-middle">
+                                    <div class="d-flex flex-row">
+                                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+
+                                        <input id="form1" min="0" name="quantity" value="2" type="number"
+                                               class="form-control form-control-sm" style="width: 50px;" />
+
+                                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="align-middle">
+                                    <p class="mb-0" style="font-weight: 500;">$9.99</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="border-bottom-0">
+                                    <div class="d-flex align-items-center">
+                                        <img src="~/Content/images/product-2.jpg" class="img-fluid rounded-3"
+                                             style="width: 120px;" alt="Book">
+                                        <div class="flex-column ms-4">
+                                            <p class="mb-2">Homo Deus: A Brief History of Tomorrow</p>
+                                            <p class="mb-0">Yuval Noah Harari</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="align-middle border-bottom-0">
+                                    <div class="d-flex flex-row">
+                                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+
+                                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                                               class="form-control form-control-sm" style="width: 50px;" />
+
+                                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="align-middle border-bottom-0">
+                                    <p class="mb-0" style="font-weight: 500;">$13.50</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px; float: righ;">
+                    <div class="card-body p-4">
+
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="d-flex justify-content-between" style="font-weight: 500;">
+                                <p class="mb-2">Tổng tiền</p>
+                                <p class="mb-2">$23.49</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between" style="font-weight: 500;">
+                                <p class="mb-0">Phí ship</p>
+                                <p class="mb-0">$2.99</p>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
+                                <p class="mb-2">Thanh toán</p>
+                                <p class="mb-2">$26.48</p>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg me-2">Quay lại xem sách</button>
+                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block btn-lg">
+                                    <div class="d-flex justify-content-between">
+                                        <span>@Html.ActionLink("Thanh toán", "CheckOut", "ShoppingCart")</span>
+                                        <span>$26.48</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
